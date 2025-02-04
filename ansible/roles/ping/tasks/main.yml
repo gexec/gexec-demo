@@ -1,0 +1,14 @@
+---
+- name: Ping target
+  register: result
+  shell: ping -c 1 -w 3 google.com
+  tags:
+    - ping
+
+- name: Ping result
+  debug:
+    msg: "{{ result.stdout_lines }}"
+  tags:
+    - ping
+
+...
