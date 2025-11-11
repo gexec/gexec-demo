@@ -22,7 +22,6 @@ repository:
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
 
-
 rulesets:
   - name: prevent destruction
     target: branch
